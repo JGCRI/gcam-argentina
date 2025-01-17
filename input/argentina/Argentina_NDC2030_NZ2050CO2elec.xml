@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario name="CCSP450">
+    <world>
+        <region name="Argentina">
+            <ghgpolicy name="GHG">
+                <market>Argentina</market> 
+                <!--From 2025 to 2030 this is GHG constraint-->
+				<constraint year="2025">364</constraint>
+				<constraint year="2030">349</constraint>
+                <!--From 2035 to 2050 this is CO2_elec constraint-->
+ 				<constraint year="2035">30.15</constraint>
+                <constraint year="2040">20.10</constraint>
+                <constraint year="2045">10.05</constraint>
+                <constraint year="2050">-0.5</constraint>
+                <constraint year="2055">-0.5</constraint>
+            </ghgpolicy>
+        </region>
+    </world>
+</scenario>

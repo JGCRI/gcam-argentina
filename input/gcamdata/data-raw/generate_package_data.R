@@ -204,6 +204,7 @@ generate_level2_data_names <- function() {
   level2_data_names[["GlobalTechSCurve"]] <- c(level2_data_names[["GlobalTechYr"]], "lifetime", "steepness", "half.life")
   level2_data_names[["GlobalTechProfitShutdown"]] <- c("sector.name", "subsector.name", "technology", "year", "median.shutdown.point", "profit.shutdown.steepness")
   level2_data_names[["GlobalTechCapture"]] <- c("sector.name", "subsector.name", "technology", "year", "remove.fraction", "storage.market")
+  level2_data_names[["GlobalTechCaptureCO2"]] <- c("sector.name", "subsector.name", "technology", "year", "remove.fraction", "storage.market", "target.gas") #Cande added
   level2_data_names[["GlobalIntTechShrwt"]] <- c("sector.name", "subsector.name", "intermittent.technology", "year", "share.weight")
   level2_data_names[["GlobalIntTechCoef"]] <- c("sector.name", "subsector.name", "technology", "year", "minicam.energy.input", "coefficient")
   level2_data_names[["GlobalIntTechEff"]] <- c("sector.name", "subsector.name", "intermittent.technology", "year", "minicam.energy.input", "efficiency", "type")
@@ -237,6 +238,7 @@ generate_level2_data_names <- function() {
 
   # Stub technologies
   level2_data_names[["StubTech"]] <- c("region", "supplysector", "subsector", "stub.technology")
+  level2_data_names[["StubTechCO2"]] <- c(level2_data_names[["StubTech"]], "year", "CO2") #Cande added
   level2_data_names[["StubTechYr"]] <- c(level2_data_names[["StubTech"]], "year")
   level2_data_names[["StubTechInterp"]] <- c(level2_data_names[["StubTech"]], "apply.to", "from.year", "to.year", "interpolation.function")
   level2_data_names[["StubTechShrwt"]] <- c("region", "supplysector", "subsector", "stub.technology", "year", "share.weight")
